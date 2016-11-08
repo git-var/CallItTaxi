@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/SONY/Documents/NetBeansProjects/WebApplication3/src/java/com/mvc/people/Order.java</file>
+            <file>file:/C:/Users/SONY/Documents/NetBeansProjects/WebApplication3/src/java/com/mvc/people/User.java</file>
+            <file>file:/C:/Users/SONY/Documents/NetBeansProjects/WebApplication3/src/java/com/mvc/controller/registerservlet.java</file>
+            <file>file:/C:/Users/SONY/Documents/NetBeansProjects/WebApplication3/web/redirect.jsp</file>
+            <file>file:/C:/Users/SONY/Documents/NetBeansProjects/WebApplication3/src/java/com/mvc/controller/orderservlet.java</file>
+            <file>file:/C:/Users/SONY/Documents/NetBeansProjects/WebApplication3/web/employee.jsp</file>
+            <file>file:/C:/Users/SONY/Documents/NetBeansProjects/WebApplication3/web/login.jsp</file>
+            <file>file:/C:/Users/SONY/Documents/NetBeansProjects/WebApplication3/src/java/com/mvc/people/MyThreadLocal.java</file>
+            <file>file:/C:/Users/SONY/Documents/NetBeansProjects/WebApplication3/web/register.jsp</file>
+            <file>file:/C:/Users/SONY/Documents/NetBeansProjects/WebApplication3/web/home.jsp</file>
+            <file>file:/C:/Users/SONY/Documents/NetBeansProjects/WebApplication3/src/java/com/mvc/database/dbconnection.java</file>
+            <file>file:/C:/Users/SONY/Documents/NetBeansProjects/WebApplication3/src/java/com/mvc/service/registerservice.java</file>
+            <file>file:/C:/Users/SONY/Documents/NetBeansProjects/WebApplication3/web/simple.jsp</file>
+            <file>file:/C:/Users/SONY/Documents/NetBeansProjects/WebApplication3/src/java/com/mvc/service/orderservice.java</file>
+            <file>file:/C:/Users/SONY/Documents/NetBeansProjects/WebApplication3/src/java/com/mvc/controller/loginservlet.java</file>
+        </group>
+    </open-files>
+</project-private>
