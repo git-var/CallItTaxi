@@ -7,7 +7,7 @@
 package com.mvc.controller;
 
 import com.mvc.people.User;
-import com.mvc.service.registerservice;
+import com.mvc.service.loginservice;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.logging.Level;
@@ -73,7 +73,7 @@ public class loginservlet extends HttpServlet {
                     User u =new User();                
             u.setUsername(username);
             u.setPassword(password);
-            registerservice reg=new registerservice();
+            loginservice reg=new loginservice();
             String validate;
 //                                MyThreadLocal local=new MyThreadLocal();
 //                    local.setName(username);
