@@ -7,6 +7,7 @@
 package com.mvc.people;
 
 import com.mvc.database.dbconnection;
+import com.mvc.people.registerinterface.insertdata;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -15,23 +16,23 @@ import java.sql.SQLException;
  *
  * @author SONY
  */
-public class User {
+public class User implements insertdata{
 
-    private static User instance;
+    //private static User instance;
 
    //make the constructor private so that this class cannot be
    //instantiated
-   private User(){}
+ //  private User(){}
 
    //Get the only object available
-   public static User getInstance(){
-      if(instance==null)
-      {
-      instance=new User();    
-             return instance;
-      }
-      return instance;
-   }
+  // public static User getInstance(){
+   //   if(instance==null)
+   //   {
+    //  instance=new User();    
+   //          return instance;
+    //  }
+    //  return instance;
+ //  }
         public String username,password,email,address,phno,category;
         private Connection connection = null;
 	private final PreparedStatement statement = null;
@@ -90,7 +91,7 @@ public class User {
     }
    
      
-    public void RegisterUser() throws ClassNotFoundException,
+            public void RegisterUser() throws ClassNotFoundException,
 			SQLException, Exception {
 		//connection = FERSDataConnection.createConnection();
 		//Statement selStatement = connection.createStatement();

@@ -13,6 +13,21 @@ import com.mvc.people.orderinterface.component;
  * @author SONY
  */
 public class Order implements component{
+     private static Order instance;
+
+   //make the constructor private so that this class cannot be
+   //instantiated
+   private Order(){}
+
+   //Get the only object available
+   public static Order getInstance(){
+      if(instance==null)
+      {
+      instance=new Order();    
+             return instance;
+      }
+      return instance;
+   }
     public String types;
     public String address;
     public String phno;

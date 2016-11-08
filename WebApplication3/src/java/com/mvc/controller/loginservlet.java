@@ -70,7 +70,7 @@ public class loginservlet extends HttpServlet {
             String username,password;
             username=request.getParameter("username");
             password=request.getParameter("password");
-                    User u = User.getInstance();                
+                    User u =new User();                
             u.setUsername(username);
             u.setPassword(password);
             registerservice reg=new registerservice();

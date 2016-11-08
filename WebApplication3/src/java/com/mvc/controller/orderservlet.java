@@ -7,6 +7,7 @@
 package com.mvc.controller;
 
 import com.mvc.people.Order;
+import com.mvc.people.User;
 import com.mvc.service.orderservice;
 import java.io.IOException;
 import java.sql.SQLException;
@@ -35,7 +36,9 @@ public class orderservlet extends HttpServlet {
             String address=request.getParameter("address");
             String time=request.getParameter("time");
             String phno=request.getParameter("phno");
-            Order o=new Order();
+                    Order o = Order.getInstance();                
+
+           // Order o=new Order();
             o.setTime(time);
             o.setTypes(types);
             o.setAddress(address);

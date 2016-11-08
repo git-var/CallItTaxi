@@ -47,8 +47,8 @@ public class registerservlet extends HttpServlet {
             throws ServletException, IOException 
         {                
                   //SingleObject object = SingleObject.getInstance();
-        User user = User.getInstance();                
-//User user = new User();
+   //     User user = User.getInstance();                
+User user = new User();
                 user.setUsername(request.getParameter("username"));
                 user.setPassword(request.getParameter("password"));
                 user.setEmail(request.getParameter("email"));

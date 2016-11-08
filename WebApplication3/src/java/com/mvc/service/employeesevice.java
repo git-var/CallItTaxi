@@ -37,7 +37,7 @@ public class employeesevice {
         connection= dbconnection.createConnection();
 String sqlString="INSERT INTO taxi (taxino,drivername,driverno,taxitype,state,priority) VALUES ('"+taxino+"','"+drivername+"','"+driverno+"','"+taxitype+"','"+state+"','"+priority+"')";
             PreparedStatement preparedStmt = connection.prepareStatement(sqlString);    
-                    preparedStmt.execute();
+                    preparedStmt.execute(); 
                              connection.close();
         
     }
