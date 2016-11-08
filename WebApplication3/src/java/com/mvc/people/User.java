@@ -34,6 +34,7 @@ public class User implements insertdata{
     //  return instance;
  //  }
         public String username,password,email,address,phno,category;
+        public float discount;
         private Connection connection = null;
 	private final PreparedStatement statement = null;
 
@@ -101,13 +102,27 @@ public class User implements insertdata{
            // Connection myconnection;
            // myconnection = dbconn.Connection();
 
-            String sqlString="INSERT INTO customer (username,password,email,address,phno,category) VALUES ('"+username+"','"+password+"','"+email+"','"+address+"','"+phno+"','"+category+"')";
+            String sqlString="INSERT INTO customer (username,password,email,address,phno,category,discount) VALUES ('"+username+"','"+password+"','"+email+"','"+address+"','"+phno+"','"+category+"','"+discount+"')";
             PreparedStatement preparedStmt = connection.prepareStatement(sqlString);    
                     preparedStmt.execute();
                  // Statement myStatement = connection.createStatement();
                 //myStatement.executeUpdate(sqlString);
                 connection.close();
           
+    }
+
+    /**
+     * @return the discount
+     */
+    public float getDiscount() {
+        return discount;
+    }
+
+    /**
+     * @param discount the discount to set
+     */
+    public void setDiscount(float discount) {
+        this.discount = discount;
     }
 
    

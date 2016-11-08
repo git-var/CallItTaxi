@@ -25,6 +25,8 @@ public class registerinterface {
     public void setPhno(String phno);
     public String getCategory();
     public void setCategory(String category);
+        public float getDiscount();
+        public void setDiscount(float discount);
 
     }
 }
