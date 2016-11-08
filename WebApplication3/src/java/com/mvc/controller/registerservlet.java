@@ -54,7 +54,7 @@ User user = new User();
                 user.setEmail(request.getParameter("email"));
                 user.setAddress(request.getParameter("address"));
                 user.setPhno(request.getParameter("phno"));
-                user.setPhno(request.getParameter("category"));
+                user.setCategory(request.getParameter("category"));
 
        try {
            user.RegisterUser();
