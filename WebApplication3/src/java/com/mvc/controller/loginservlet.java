@@ -9,6 +9,7 @@ package com.mvc.controller;
 import com.mvc.people.User;
 import com.mvc.service.loginservice;
 import java.io.IOException;
+import java.net.URLEncoder;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -67,7 +68,7 @@ public class loginservlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         try {
-            String username,password;
+            String username,password,message;
             username=request.getParameter("username");
             password=request.getParameter("password");
                     User u =new User();                
@@ -82,6 +83,7 @@ public class loginservlet extends HttpServlet {
                 case "SUCCESS":
                     HttpSession session = request.getSession();
 session.setAttribute("userid",u.getUsername());
+  message=u.getMessage();
                     //HttpSession session;
 //                    String p=u.getUsername();
 //            session = request.getSession();
@@ -89,7 +91,8 @@ session.setAttribute("userid",u.getUsername());
 //                    Object user;
 //            user = request.getSession().getAttribute(p);
 //    MyThreadLocal.set((User) user);
-                    response.sendRedirect("home.jsp");
+response.sendRedirect("home.jsp?message=" + URLEncoder.encode(message, "UTF-8"));
+                //    response.sendRedirect("home.jsp");
                     break;
                 case "PINGO":
                     response.sendRedirect("employee.jsp");

@@ -33,7 +33,8 @@ public class orderservlet extends HttpServlet {
             throws ServletException, IOException {
         try {
             String types=request.getParameter("types");
-            String address=request.getParameter("address");
+            String from=request.getParameter("from");
+                        String to=request.getParameter("to");
             String time=request.getParameter("time");
             String phno=request.getParameter("phno");
                     Order o = Order.getInstance();                
@@ -41,7 +42,8 @@ public class orderservlet extends HttpServlet {
            // Order o=new Order();
             o.setTime(time);
             o.setTypes(types);
-            o.setAddress(address);
+            o.setFrom(from);
+            o.setTo(to); 
             o.setPhno(phno);
             HttpSession session = request.getSession();
 String uid= session.getAttribute("userid").toString();
