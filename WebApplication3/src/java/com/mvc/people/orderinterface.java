@@ -15,8 +15,10 @@ public class orderinterface {
             {
                     public String getTypes();
                         public void setTypes(String types);
-                            public String getAddress();
-                                public void setAddress(String address);
+                            public String getFrom();
+                                public void setFrom(String address);
+                                public String getTo();
+                                public void setTo(String address);
                                     public String getPhno();
                                         public void setPhno(String phno);
                                             public String getTime();

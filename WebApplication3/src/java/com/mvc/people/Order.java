@@ -29,9 +29,10 @@ public class Order implements component{
       return instance;
    }
     public String types;
-    public String address;
+    public String from;
     public String phno;
     public String time;
+    public String to;
 
     /**
      * @return the type
@@ -50,17 +51,7 @@ public class Order implements component{
     /**
      * @return the address
      */
-    public String getAddress() {
-        return address;
-    }
-
-    /**
-     * @param address the address to set
-     */
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
+   
     /**
      * @return the phno
      */
@@ -87,6 +78,34 @@ public class Order implements component{
      */
     public void setTime(String time) {
         this.time = time;
+    }
+
+    /**
+     * @return the from
+     */
+    public String getFrom() {
+        return from;
+    }
+
+    /**
+     * @param from the from to set
+     */
+    public void setFrom(String from) {
+        this.from = from;
+    }
+
+    /**
+     * @return the to
+     */
+    public String getTo() {
+        return to;
+    }
+
+    /**
+     * @param to the to to set
+     */
+    public void setTo(String to) {
+        this.to = to;
     }
     
 }

@@ -27,6 +27,8 @@ public class registerinterface {
     public void setCategory(String category);
         public float getDiscount();
         public void setDiscount(float discount);
-
+                    public String getMessage();
+                    public void setMessage(String message);
+                    
     }
 }

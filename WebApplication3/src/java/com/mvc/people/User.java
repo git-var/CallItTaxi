@@ -33,7 +33,7 @@ public class User implements insertdata{
     //  }
     //  return instance;
  //  }
-        public String username,password,email,address,phno,category;
+        public String username,password,email,address,phno,category,message;
         public float discount;
         private Connection connection = null;
 	private final PreparedStatement statement = null;
@@ -84,6 +84,7 @@ public class User implements insertdata{
         return category;
     }
 
+    
     /**
      * @param category the category to set
      */
@@ -125,5 +126,17 @@ public class User implements insertdata{
         this.discount = discount;
     }
 
-   
+    /**
+     * @return the message
+     */
+            public String getMessage() {
+        return message;
+    }
+
+    /**
+     * @param message the message to set
+     */
+            public void setMessage(String message) {
+        this.message = message;
+    }
 }
