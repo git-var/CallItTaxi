@@ -43,8 +43,8 @@
                     </tr>
                     <tr>
                         <td>Category</td>
-                        <td><input type="radio" name="category" value="student" />Private
-                        <input type="radio" name="category" value="worker" />Corporate
+                        <td><input type="radio" name="category" value="student" />student
+                        <input type="radio" name="category" value="worker" />worker
                         </td>
                     </tr>
                     <tr>

@@ -15,6 +15,7 @@
         <h1>Hello admin</h1>
         <form method="post" action="employeeservlet">
             <center>
+                <a href="message.jsp">click to enter message or go below to insert taxi details</a>
                 <p>Taxinumber:<br>
                     <input type="text" name="taxino">
                 <p>
@@ -28,5 +29,8 @@
                 <p> <input type="submit"></p>
             </center>
             </form>
+        <form method="post" action="logoutservlet">
+    <input type="submit" value="Logout"/>
+</form>
     </body>
 </html>
