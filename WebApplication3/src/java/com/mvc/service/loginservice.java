@@ -44,17 +44,19 @@ public class loginservice {
         upass = u.getPassword();
      String name,pass;
      String p="admin";
+     String message;
      try 
             {      
                 connection= dbconnection.createConnection();
    statement = connection.createStatement(); 
 //Statement is used to write queries. Read more about it.
- resultSet = statement.executeQuery("SELECT username,password from customer"); //Here table name is users and userName,password are columns. fetching all the records and storing in a resultSet.
+ resultSet = statement.executeQuery("SELECT username,password,message from customer"); //Here table name is users and userName,password are columns. fetching all the records and storing in a resultSet.
  while(resultSet.next()) // Until next row is present otherwise it return false
  {
   name = resultSet.getString("username"); //fetch the values present in database
   pass = resultSet.getString("password");
- 
+  message=resultSet.getString("message");
+ //User us=new User();
    if(uname.equals(name) && upass.equals(pass))
    {
         if(name.equals("admin"))
@@ -62,6 +64,7 @@ public class loginservice {
        return "PINGO";
    }
         else{
+             u.setMessage(message);
                return "SUCCESS";
        }
    }

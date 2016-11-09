@@ -39,11 +39,12 @@ public class orderservice{
         String name1;
         name1 = uid;
         String types=o.getTypes();
-        String address=o.getAddress();
+        String from=o.getFrom();
+        String to=o.getTo();
         String time=o.getTime();
         String phno=o.getPhno();
         connection= dbconnection.createConnection();
-String sqlString="INSERT INTO book (name,type,address,time,phno) VALUES ('"+name1+"','"+types+"','"+address+"','"+time+"','"+phno+"')";
+String sqlString="INSERT INTO book (name,type,from,to,time,phno) VALUES ('"+name1+"','"+types+"','"+from+"','"+to+"',"+time+"','"+phno+"')";
             PreparedStatement preparedStmt = connection.prepareStatement(sqlString);    
                     preparedStmt.execute();
                              connection.close();
