@@ -45,6 +45,7 @@ public class employeeservlet extends HttpServlet {
             ta.setTaxitype(taxitype);
             employeesevice es=new employeesevice();
             es.insert(ta);
+            response.sendRedirect("employee.jsp");
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(employeeservlet.class.getName()).log(Level.SEVERE, null, ex);
         }

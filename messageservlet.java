@@ -29,7 +29,7 @@ public class messageservlet extends HttpServlet{
             throws ServletException, IOException {
    String msg=request.getParameter("msg");
    subjectObserver subject = new subjectObserver();
-      new concreteObserver(subject);
+      new concreteObserver(subject) ;
             subject.setState(msg);
       response.sendRedirect("employee.jsp");
     }
