@@ -26,7 +26,7 @@
     <input type="radio" name="taxitype" value="large"> Suv<br>
                   <p> State:<br><input type="text" name="state"></p>
                                   <p>Priority:<br><input type="text" name="priority"></p>
-                <p> <input type="submit"></p>
+                <p> <input type="submit" value="enter"></p>
             </center>
             </form>
         <form method="post" action="logoutservlet">

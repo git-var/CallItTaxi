@@ -15,22 +15,20 @@
         <title>JSP Page</title>
     </head>
     <body>
-        
+            <p>Message for the day: ${param.message}</p>        
         <form method="post" action="orderservlet">
-            
-            <p>Message for the day: ${param.message}</p>
             <center>
                 <p>Type of taxi:<br>
-                    <input type="radio" name="types" value="small" checked> Hatchback<br>
-  <input type="radio" name="types" value="medium"> Sedan<br>
-  <input type="radio" name="types" value="large"> SUV
+                    <input type="radio" name="types" value="small"  checked/> Hatchback<br>
+                    <input type="radio" name="types" value="medium"/> Sedan<br>
+                    <input type="radio" name="types" value="large"/> SUV
                 </p>
                 <p>
-                    From:<br><input type="text" name="from"></p>
-                <p>To:<br><input type="text" name="to"></p
-                <p> Time:<br><input type="text" name="time"></p>
-                <p> Phno:<br><input type="text" name="phno"></p>
-                <p> <input type="submit"></p>
+                    From:<br><input type="text" name="start"/></p>
+                <p>To:<br><input type="text" name="end"/></p>
+                <p> Time:<br><input type="text" name="time"/></p>
+                <p> Phno:<br><input type="text" name="phno"/></p>
+                <p> <input type="submit" value="enter"/></p>
             </center>
             </form>
         <form method="post" action="logoutservlet">
