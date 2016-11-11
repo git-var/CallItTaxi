@@ -29,14 +29,15 @@ public class Order implements component{
       return instance;
    }
     public String types;
-    public String from;
+    public String start;
     public String phno;
     public String time;
-    public String to;
+    public String end;
 
     /**
      * @return the type
      */
+     @Override
     public String getTypes() {
         return types;
     }
@@ -44,6 +45,7 @@ public class Order implements component{
     /**
      * @param type the type to set
      */
+     @Override
     public void setTypes(String types) {
         this.types = types;
     }
@@ -55,6 +57,7 @@ public class Order implements component{
     /**
      * @return the phno
      */
+     @Override
     public String getPhno() {
         return phno;
     }
@@ -62,6 +65,7 @@ public class Order implements component{
     /**
      * @param phno the phno to set
      */
+     @Override
     public void setPhno(String phno) {
         this.phno = phno;
     }
@@ -69,6 +73,7 @@ public class Order implements component{
     /**
      * @return the time
      */
+     @Override
     public String getTime() {
         return time;
     }
@@ -76,6 +81,7 @@ public class Order implements component{
     /**
      * @param time the time to set
      */
+     @Override
     public void setTime(String time) {
         this.time = time;
     }
@@ -83,29 +89,33 @@ public class Order implements component{
     /**
      * @return the from
      */
-    public String getFrom() {
-        return from;
+     @Override
+    public String getStart() {
+        return start;
     }
 
     /**
      * @param from the from to set
      */
-    public void setFrom(String from) {
-        this.from = from;
+     @Override
+    public void setStart(String start) {
+        this.start = start;
     }
 
     /**
      * @return the to
      */
-    public String getTo() {
-        return to;
+     @Override
+    public String getEnd() {
+        return end;
     }
 
     /**
      * @param to the to to set
      */
-    public void setTo(String to) {
-        this.to = to;
+     @Override
+    public void setEnd(String end) {
+        this.end = end;
     }
     
 }
